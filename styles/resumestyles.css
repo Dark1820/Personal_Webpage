@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #71503a; /* Consistent background color for all pages */
+    padding: 20px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white; /* Change color on hover for all links */
+}
+
+/* Styling for Active Link */
+nav ul li a.active {
+    color: white;
+    font-weight: bold;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: beige;
+
+}
+
+.resume-container h1{
+    align-items: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+    padding-left: 17vw;
+    padding-top: 5vw;
+}
+
+.resume-pdf{
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #71503a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #2e6d73;
+}

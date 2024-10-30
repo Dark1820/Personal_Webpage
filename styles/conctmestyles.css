@@ -1,0 +1,109 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: beige;
+}
+
+/* Header Styles */
+header {
+    background-color: #71503a; /* Consistent background color for all pages */
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white; /* Change color on hover for all links */
+}
+
+
+/* Contact Me Section */
+.ContactMe-container {
+    max-width: 80vw;
+    margin: 50px auto;
+    padding: 60px;
+    background-color: #d2d2d2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Contact-Me h2 {
+    font-size: 70px;
+    color: Black;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    }
+.Contact-Me hr {
+    border: none; /* Remove default border */
+    height: 3px;  /* Set the height of the line */
+    background-color: black; /* Set the color of the line */
+    margin: 20px 0; /* Add space around the line */
+}
+
+.Contact-Me table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.Contact-Me td {
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+.Contact-Me td:first-child {
+    font-weight: bold;
+    text-align: right;
+    width: 40%;
+}
+
+.Contact-Me td a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Contact-Me td a:hover {
+    color: #7c66fa;
+}
+
+.spacer{
+    height: 271px;
+}

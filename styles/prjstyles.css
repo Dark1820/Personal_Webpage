@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #71503a; /* Consistent background color for all pages */
+    padding: 20px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white; /* Change color on hover for all links */
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px;
+    background-color: beige;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between; /* This will add equal spacing between elements */
+    align-items: stretch; /* This makes sure that all elements stretch to fill the container */
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusts the gap between the project cards */
+    margin: 0 auto;
+    max-width: 1800px; /* Adjust width as necessary */
+    background-color: beige;
+    text-decoration: none;
+}
+
+/* Styling the project link */
+.project-link  {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherit color from parent */
+    display: block; /* Ensures the entire card is clickable */
+}
+
+.project-link:focus,
+.project-link:visited {
+    outline: none; /* Remove outline when clicked or focused */
+    color: inherit; /* Ensures color doesn't change on focus or visited */
+}
+
+.project-link:hover {
+    color: inherit; /* Prevent color change on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Project Card Styles */
+.project-card {
+    flex: 1 1 30%; /* This will allow the cards to fill the row and take up equal space */
+    background-color: #71503a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 25px;
+    width: 500px;
+}
+
+
+.project-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-card img {
+    width: 95%;
+    height: 475px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-card h3 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+    padding-top: 50px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
