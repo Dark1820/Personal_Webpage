@@ -59,19 +59,15 @@ nav ul li a:hover {
 }
 
 .projects-container {
-    display: flex;
-    justify-content: space-between; /* This will add equal spacing between elements */
-    align-items: stretch; /* This makes sure that all elements stretch to fill the container */
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 20px; /* Adjusts the gap between the project cards */
     margin: 0 auto;
-    max-width: 1800px; /* Adjust width as necessary */
+    max-width: 1800px;
     background-color: beige;
-    text-decoration: none;
 }
 
-/* Styling the project link */
-.project-link  {
+.project-link {
     text-decoration: none; /* Removes underline */
     color: inherit; /* Inherit color from parent */
     display: block; /* Ensures the entire card is clickable */
@@ -90,24 +86,23 @@ nav ul li a:hover {
 
 /* Project Card Styles */
 .project-card {
-    flex: 1 1 30%; /* This will allow the cards to fill the row and take up equal space */
     background-color: #71503a;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
+    width: 100%; /* Make sure the cards fill the column */
     margin: 25px;
-    width: 500px;
+    height: auto; /* Let the height adjust based on content */
 }
-
 
 .project-card:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .project-card img {
-    width: 95%;
+    width: 100%;
     height: 475px;
     object-fit: cover;
 }
@@ -131,7 +126,10 @@ nav ul li a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects-container {
-        flex-direction: column;
-        gap: 40px;
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+    }
+
+    .project-card img {
+        height: auto; /* Allow images to scale */
     }
 }
